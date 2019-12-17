@@ -1,10 +1,10 @@
 
 <?php
-$file = 'assets/img/poto.jgp';
+$file = 'assets/img/poto.jpg';
 
 if (file_exists($file)) {
     header('Content-Description: File Transfer');
-    header('Content-Type: image/jpeg');
+    header('Content-Type: image/jpg');
     header('Content-Disposition: attachment; filename="'.basename($file).'"');
     header('Expires: 0');
     header('Cache-Control: must-revalidate');
