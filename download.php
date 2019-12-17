@@ -6,10 +6,10 @@
             header('Expires: 0');
             header('Cache-Control: private');
             header('Pragma: private');
-            header('Content-Length: ' . filesize($file));
+            header('Content-Length: ' . filesize("assets/img/poto.jgp"));
             ob_clean();
             flush();
-            readfile($file);
+            readfile("assets/img/poto.jgp";
             
             exit;
 ?>
